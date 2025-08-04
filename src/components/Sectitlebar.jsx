@@ -8,7 +8,7 @@ import msg from '../images/msg.svg';
 
 function Sectitlebar() {
   return (
-    <div className="flex flex-col md:flex-row  items-center p-4 border-b border-gray-200 bg-white w-full">
+    <div className="flex flex-col md:flex-row  items-center p-4 border-b border-gray-200 bg-white w-full h-[60px]">
       
       {/* Left Profile Section */}
       <div className="flex gap-4 w-full md:w-auto">

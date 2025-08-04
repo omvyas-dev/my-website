@@ -29,18 +29,12 @@ const articles = [
     description: 'Some support tickets may require additional work in order for them to be marked as resolved...',
     tags: ['Wurkforce', 'Wurkforce'],
   },
-  {
-    id: 5,
-    title: 'How do I raise a support ticket?',
-    date: '5 months ago',
-    description: 'Some support tickets may require additional work in order for them to be marked as resolved...',
-    tags: ['Wurkforce', 'Wurkforce'],
-  },
+
 ];
 
 export default function Cards() {
   return (
-    <div className="flex flex-col w-full bg-[#f5f6f9] min-h-screen h-[259px]">
+    <div className="flex flex-col w-full bg-[#F0F2F6] min-h-screen h-[259px]">
       {/* Top Header */}
       
        <div className="relative text-center">

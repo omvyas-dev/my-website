@@ -37,7 +37,7 @@ const UserCard = ({ name, img }) => (
 
 export default function Leftbar() {
   return (
-    <div className="w-full max-w-sm mx-auto p-4 bg-gray-50 rounded-xl">
+    <div className="w-full max-w-sm mx-auto p-4 bg-gray-50 rounded-xl mt-4 mr-5">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold">Users</h3>

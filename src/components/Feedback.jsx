@@ -1,6 +1,7 @@
 import React from 'react';
 import feedbackImg from '../images/feedback.svg'; // Ensure this path is correct
 import bgfee from '../images/bgfee.svg'; // Ensure this path is correct
+import './Feedback.css'
 
 export default function Feedback() {
   return (
@@ -8,13 +9,13 @@ export default function Feedback() {
       
       {/* Header Section */}
  <div
-  className="w-full bg-cover bg-center p-6 md:p-12"
+  className="w-full bg-cover bg-center p-6 md:p-12 mt-5"
   style={{
     backgroundImage: `url(${bgfee})`,
   }}
 >
         <p className="text-sm text-blue-900 mb-2">Knowledge Base</p>
-        <h1 className="text-2xl md:text-3xl font-semibold text-gray-800">
+        <h1 className="font-bold text-[30px] leading-[1] tracking-[0]">
           How do I submit feedback for support tickets?
         </h1>
       </div>

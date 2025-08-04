@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../images/logo.svg';
 import s1 from '../images/s1.svg';
+import i2 from '../images/i2.svg';
 import s2 from '../images/f2.svg';
 import s3 from '../images/f3.svg';
 import s4 from '../images/f4.svg';
@@ -18,7 +19,7 @@ import s14 from '../images/f14.svg';
 export default function Sidebar({ setPage }) {
   const menuItems = [
     { icon: s1, label: 'Dashboard', value: 'dashboard' },
-    { icon: s2, label: 'Connect', value: 'connect' },
+     
     { icon: s3, label: 'Tracker', value: 'tracker' },
     { icon: s4, label: 'Resource', value: 'Resource' },
     { icon: s5, label: 'Feedback', value: 'Feedback' },

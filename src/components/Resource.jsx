@@ -1,27 +1,29 @@
-import React from 'react'
-import Menubar from '../Menubar'
-import Chat from './Chat'
-import Leftbar from '../Leftbar'
+import React from 'react';
+import Menubar from '../Menubar';
+import Chat from './Chat';
+import Leftbar from '../Leftbar';
 
 export default function Resource() {
   return (
-    <div>
-        <div className="flex gap-4 p-4 bg-gray-50">
-      
-      <div className="flex-1">
-       <Menubar/>
-      </div>
+    <div className="min-h-screen bg-gray-50">
+      <div className="flex flex-col md:flex-row gap-4 p-4">
 
-      
-      <div className="flex-1">
-        <Chat/>
-      </div>
+        {/* Menubar Section */}
+        <div className="w-full md:w-1/4">
+          <Menubar />
+        </div>
 
-      
-      <div className="flex-1">
-       <Leftbar/>
+        {/* Chat Section */}
+        <div className="w-full md:w-1/2">
+          <Chat />
+        </div>
+
+        {/* Leftbar Section */}
+        <div className="w-full md:w-1/4 hidden md:block">
+          <Leftbar />
+        </div>
+        
       </div>
     </div>
-    </div>
-  )
+  );
 }

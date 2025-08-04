@@ -10,34 +10,19 @@ import Job from './components/Job';
 import Feedback from './components/Feedback';
 import Resource from './components/Resource';
 import Jobsec from './components/Jobsec';
+import Dashboard from './components/Dashboard';
 
 function App() {
   const [page, setPage] = useState('chat'); // default page
 
   const renderPage = () => {
     switch (page) {
-      case 'chat':
+      case 'dashboard':
         return (
-          <div className="flex flex-col h-screen">
-            
-            <div className="flex flex-col flex-1">
-        <Topbar />
-        </div>
-            <div className="p-4">
-              <Sectitlebar />
+          <div className="flex items-center justify-center h-full text-2xl font-boldx">
+              <Dashboard/>
             </div>
-            <div className="flex flex-1">
-              <div className="w-72">
-                <Menubar />
-              </div>
-              <div className="flex-1 overflow-y-auto">
-                <Chat />
-              </div>
-              <div className="w-[310px]">
-                <Leftbar />
-              </div>
-            </div>
-          </div>
+   
         );
       case 'tracker':
         return (
@@ -45,12 +30,7 @@ function App() {
             <Cards/>
           </div>
         );
-      case 'dashboard':
-        return (
-          <div className="flex items-center justify-center h-full text-2xl font-bold">
-            Dashboard Page
-          </div>
-        );
+
           case 'Feedback':
         return (
           <div className="flex items-center justify-center h-full text-2xl font-bold">
