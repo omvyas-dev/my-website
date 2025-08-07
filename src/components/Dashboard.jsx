@@ -1,28 +1,36 @@
-import React from 'react'
-import Menubar from '../Menubar'
-import Chat from './Chat'
-import Leftbar from '../Leftbar'
-import Titlebar from './Titlebar'
-import Sectitlebar from './Sectitlebar'
+import React from 'react';
+import Menubar from '../Menubar';
+import Chat from './Chat';
+import Leftbar from '../Leftbar';
+import Titlebar from './Titlebar';
+import Sectitlebar from './Sectitlebar';
 
 export default function Dashboard() {
   return (
     <div>
-            <div className="flex flex-col flex-1 mt-80">
-                <Titlebar/>
-                <Sectitlebar />
-                    <div className="flex flex-1">
-                      <div className="w-72">
-                        <Menubar />
-                      </div>
-                      <div className="flex-1 overflow-y-auto">
-                        <Chat />
-                      </div>
-                      <div className="w-[310px]">
-                        <Leftbar />
-                      </div>
-        </div>
-        </div>
+
+         <div className="min-h-screen bg-gray-50">
+      <Titlebar />
+      <Sectitlebar /> 
+           <div className="flex flex-col md:flex-row gap-4 p-4">
+     
+             {/* Menubar Section */}
+             <div className="w-full md:w-1/4">
+               <Menubar />
+             </div>
+     
+             {/* Chat Section */}
+             <div className="w-full md:w-1/2">
+               <Chat />
+             </div>
+     
+             {/* Leftbar Section */}
+             <div className="w-full md:w-1/4 hidden md:block">
+               <Leftbar />
+             </div>
+             
+           </div>
+         </div>
     </div>
-  )
-}
+  );
+}  

@@ -44,7 +44,7 @@ export default function Cards() {
   <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
     <h2 className="text-sm tracking-widest" style={{color:"black"}}>Knowledge Base</h2>
     <h1 className="text-3xl font-bold mt-1 "style={{color:"black"}}>How can we help?</h1>
-<form class="max-w-md mx-auto mb-6 mt-2 w-[860px] h-[71px]">   
+<form className="w-full max-w-3xl mx-auto mb-6 mt-2 px-4">
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
     <div class="relative">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
